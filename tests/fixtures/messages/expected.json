@@ -1,0 +1,224 @@
+{
+  "malformed": {
+    "m01_not_json": {
+      "line": 1,
+      "reason": "text is not JSON"
+    },
+    "m02_empty_line": {
+      "line": 2,
+      "reason": "empty line is not JSON"
+    },
+    "m03_json_array": {
+      "line": 3,
+      "reason": "JSON value is an array, not an object"
+    },
+    "m04_missing_drive_id": {
+      "line": 4,
+      "reason": "drive_id is missing"
+    },
+    "m05_missing_frame_idx": {
+      "line": 5,
+      "reason": "frame_idx is missing"
+    },
+    "m06_missing_ts": {
+      "line": 6,
+      "reason": "ts is missing"
+    },
+    "m07_missing_points": {
+      "line": 7,
+      "reason": "points is missing"
+    },
+    "m08_null_points": {
+      "line": 8,
+      "reason": "points is null, not an array"
+    },
+    "m09_points_string": {
+      "line": 9,
+      "reason": "points is a string"
+    },
+    "m10_points_flat_ints": {
+      "line": 10,
+      "reason": "points is a flat integer array, not an array of arrays"
+    },
+    "m11_inner_len_2": {
+      "line": 11,
+      "reason": "a point has 2 coordinates"
+    },
+    "m12_inner_len_4": {
+      "line": 12,
+      "reason": "a point has 4 coordinates"
+    },
+    "m13_float_coordinate": {
+      "line": 13,
+      "reason": "coordinate 0.5 is a float, not an integer"
+    },
+    "m14_string_coordinate": {
+      "line": 14,
+      "reason": "coordinate is a string, not an integer"
+    },
+    "m15_frame_idx_float": {
+      "line": 15,
+      "reason": "frame_idx 1.5 is a float, not an integer"
+    },
+    "m16_frame_idx_string": {
+      "line": 16,
+      "reason": "frame_idx is a string, not an integer"
+    },
+    "m17_ts_string": {
+      "line": 17,
+      "reason": "ts is a string, not a number"
+    },
+    "m18_drive_id_number": {
+      "line": 18,
+      "reason": "drive_id is a number, not a string"
+    },
+    "m19_drive_id_null": {
+      "line": 19,
+      "reason": "drive_id is null, not a string"
+    },
+    "m20_bool_coordinate": {
+      "line": 20,
+      "reason": "coordinate true is a boolean, not an integer"
+    },
+    "m21_truncated_json": {
+      "line": 21,
+      "reason": "JSON is truncated"
+    },
+    "m22_frame_idx_float_zero_fraction": {
+      "line": 22,
+      "reason": "frame_idx 1.0 is a float literal, not an integer (strict contract)"
+    }
+  },
+  "valid": {
+    "v01_two_points": {
+      "drive_id": "drive-001",
+      "drive_start_utc": null,
+      "frame_idx": 0,
+      "line": 1,
+      "n_points": 2,
+      "ts": 0.0,
+      "vehicle_id": null,
+      "vehicle_kind": null,
+      "x": 0.5,
+      "y": 1.0,
+      "z": 1.5
+    },
+    "v02_negative_coordinates": {
+      "drive_id": "drive-001",
+      "drive_start_utc": null,
+      "frame_idx": 1,
+      "line": 2,
+      "n_points": 2,
+      "ts": 0.0625,
+      "vehicle_id": null,
+      "vehicle_kind": null,
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    },
+    "v03_lattice_200_points": {
+      "drive_id": "drive-001",
+      "drive_start_utc": null,
+      "frame_idx": 2,
+      "line": 3,
+      "n_points": 200,
+      "ts": 0.125,
+      "vehicle_id": null,
+      "vehicle_kind": null,
+      "x": 12.34,
+      "y": -5.67,
+      "z": 0.89
+    },
+    "v04_with_metadata": {
+      "drive_id": "drive-001",
+      "drive_start_utc": "2026-01-01T08:00:00+00:00",
+      "frame_idx": 3,
+      "line": 4,
+      "n_points": 1,
+      "ts": 0.1875,
+      "vehicle_id": "veh-drive-001",
+      "vehicle_kind": "car",
+      "x": 0.1,
+      "y": 0.2,
+      "z": 0.3
+    },
+    "v05_without_metadata": {
+      "drive_id": "drive-001",
+      "drive_start_utc": null,
+      "frame_idx": 3,
+      "line": 5,
+      "n_points": 1,
+      "ts": 0.1875,
+      "vehicle_id": null,
+      "vehicle_kind": null,
+      "x": 0.1,
+      "y": 0.2,
+      "z": 0.3
+    },
+    "v06_integer_ts": {
+      "drive_id": "drive-001",
+      "drive_start_utc": null,
+      "frame_idx": 4,
+      "line": 6,
+      "n_points": 2,
+      "ts": 3.0,
+      "vehicle_id": null,
+      "vehicle_kind": null,
+      "x": 2.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "v07_extra_unknown_field": {
+      "drive_id": "drive-001",
+      "drive_start_utc": null,
+      "frame_idx": 5,
+      "line": 7,
+      "n_points": 1,
+      "ts": 0.3125,
+      "vehicle_id": null,
+      "vehicle_kind": null,
+      "x": -2.5,
+      "y": 0.0,
+      "z": 0.75
+    },
+    "v08_empty_cloud": {
+      "drive_id": "drive-001",
+      "drive_start_utc": null,
+      "frame_idx": 6,
+      "line": 8,
+      "n_points": 0,
+      "ts": 0.375,
+      "vehicle_id": null,
+      "vehicle_kind": null,
+      "x": null,
+      "y": null,
+      "z": null
+    },
+    "v09_large_integer_coordinate": {
+      "drive_id": "drive-001",
+      "drive_start_utc": null,
+      "frame_idx": 7,
+      "line": 9,
+      "n_points": 2,
+      "ts": 0.4375,
+      "vehicle_id": null,
+      "vehicle_kind": null,
+      "x": 20000000.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "v10_float_ts": {
+      "drive_id": "drive-001",
+      "drive_start_utc": null,
+      "frame_idx": 8,
+      "line": 10,
+      "n_points": 1,
+      "ts": 1.0625,
+      "vehicle_id": null,
+      "vehicle_kind": null,
+      "x": 0.05,
+      "y": 0.05,
+      "z": 0.05
+    }
+  }
+}

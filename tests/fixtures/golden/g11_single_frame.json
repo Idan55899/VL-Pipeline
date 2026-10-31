@@ -1,0 +1,22 @@
+{
+  "case": "g11_single_frame",
+  "description": "A single frame at the origin.",
+  "raw": [
+    {
+      "drive_id": "golden",
+      "frame_idx": 0,
+      "ts": 0.0,
+      "n_points": 200,
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.75
+    }
+  ],
+  "expected": {
+    "n_frames_out": 1,
+    "error_codes": {},
+    "events": [],
+    "distance_m": 0.0,
+    "distance_tol": 1e-09
+  }
+}

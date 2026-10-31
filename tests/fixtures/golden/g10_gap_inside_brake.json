@@ -1,0 +1,1460 @@
+{
+  "case": "g10_gap_inside_brake",
+  "description": "g02 with frame 80 omitted, in the middle of the brake.",
+  "raw": [
+    {
+      "drive_id": "golden",
+      "frame_idx": 0,
+      "ts": 0.0,
+      "n_points": 200,
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 1,
+      "ts": 0.0625,
+      "n_points": 200,
+      "x": 0.9375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 2,
+      "ts": 0.125,
+      "n_points": 200,
+      "x": 1.875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 3,
+      "ts": 0.1875,
+      "n_points": 200,
+      "x": 2.8125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 4,
+      "ts": 0.25,
+      "n_points": 200,
+      "x": 3.75,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 5,
+      "ts": 0.3125,
+      "n_points": 200,
+      "x": 4.6875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 6,
+      "ts": 0.375,
+      "n_points": 200,
+      "x": 5.625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 7,
+      "ts": 0.4375,
+      "n_points": 200,
+      "x": 6.5625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 8,
+      "ts": 0.5,
+      "n_points": 200,
+      "x": 7.5,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 9,
+      "ts": 0.5625,
+      "n_points": 200,
+      "x": 8.4375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 10,
+      "ts": 0.625,
+      "n_points": 200,
+      "x": 9.375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 11,
+      "ts": 0.6875,
+      "n_points": 200,
+      "x": 10.3125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 12,
+      "ts": 0.75,
+      "n_points": 200,
+      "x": 11.25,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 13,
+      "ts": 0.8125,
+      "n_points": 200,
+      "x": 12.1875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 14,
+      "ts": 0.875,
+      "n_points": 200,
+      "x": 13.125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 15,
+      "ts": 0.9375,
+      "n_points": 200,
+      "x": 14.0625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 16,
+      "ts": 1.0,
+      "n_points": 200,
+      "x": 15.0,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 17,
+      "ts": 1.0625,
+      "n_points": 200,
+      "x": 15.9375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 18,
+      "ts": 1.125,
+      "n_points": 200,
+      "x": 16.875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 19,
+      "ts": 1.1875,
+      "n_points": 200,
+      "x": 17.8125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 20,
+      "ts": 1.25,
+      "n_points": 200,
+      "x": 18.75,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 21,
+      "ts": 1.3125,
+      "n_points": 200,
+      "x": 19.6875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 22,
+      "ts": 1.375,
+      "n_points": 200,
+      "x": 20.625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 23,
+      "ts": 1.4375,
+      "n_points": 200,
+      "x": 21.5625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 24,
+      "ts": 1.5,
+      "n_points": 200,
+      "x": 22.5,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 25,
+      "ts": 1.5625,
+      "n_points": 200,
+      "x": 23.4375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 26,
+      "ts": 1.625,
+      "n_points": 200,
+      "x": 24.375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 27,
+      "ts": 1.6875,
+      "n_points": 200,
+      "x": 25.3125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 28,
+      "ts": 1.75,
+      "n_points": 200,
+      "x": 26.25,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 29,
+      "ts": 1.8125,
+      "n_points": 200,
+      "x": 27.1875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 30,
+      "ts": 1.875,
+      "n_points": 200,
+      "x": 28.125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 31,
+      "ts": 1.9375,
+      "n_points": 200,
+      "x": 29.0625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 32,
+      "ts": 2.0,
+      "n_points": 200,
+      "x": 30.0,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 33,
+      "ts": 2.0625,
+      "n_points": 200,
+      "x": 30.9375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 34,
+      "ts": 2.125,
+      "n_points": 200,
+      "x": 31.875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 35,
+      "ts": 2.1875,
+      "n_points": 200,
+      "x": 32.8125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 36,
+      "ts": 2.25,
+      "n_points": 200,
+      "x": 33.75,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 37,
+      "ts": 2.3125,
+      "n_points": 200,
+      "x": 34.6875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 38,
+      "ts": 2.375,
+      "n_points": 200,
+      "x": 35.625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 39,
+      "ts": 2.4375,
+      "n_points": 200,
+      "x": 36.5625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 40,
+      "ts": 2.5,
+      "n_points": 200,
+      "x": 37.5,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 41,
+      "ts": 2.5625,
+      "n_points": 200,
+      "x": 38.4375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 42,
+      "ts": 2.625,
+      "n_points": 200,
+      "x": 39.375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 43,
+      "ts": 2.6875,
+      "n_points": 200,
+      "x": 40.3125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 44,
+      "ts": 2.75,
+      "n_points": 200,
+      "x": 41.25,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 45,
+      "ts": 2.8125,
+      "n_points": 200,
+      "x": 42.1875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 46,
+      "ts": 2.875,
+      "n_points": 200,
+      "x": 43.125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 47,
+      "ts": 2.9375,
+      "n_points": 200,
+      "x": 44.0625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 48,
+      "ts": 3.0,
+      "n_points": 200,
+      "x": 45.0,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 49,
+      "ts": 3.0625,
+      "n_points": 200,
+      "x": 45.9375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 50,
+      "ts": 3.125,
+      "n_points": 200,
+      "x": 46.875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 51,
+      "ts": 3.1875,
+      "n_points": 200,
+      "x": 47.8125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 52,
+      "ts": 3.25,
+      "n_points": 200,
+      "x": 48.75,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 53,
+      "ts": 3.3125,
+      "n_points": 200,
+      "x": 49.6875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 54,
+      "ts": 3.375,
+      "n_points": 200,
+      "x": 50.625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 55,
+      "ts": 3.4375,
+      "n_points": 200,
+      "x": 51.5625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 56,
+      "ts": 3.5,
+      "n_points": 200,
+      "x": 52.5,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 57,
+      "ts": 3.5625,
+      "n_points": 200,
+      "x": 53.4375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 58,
+      "ts": 3.625,
+      "n_points": 200,
+      "x": 54.375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 59,
+      "ts": 3.6875,
+      "n_points": 200,
+      "x": 55.3125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 60,
+      "ts": 3.75,
+      "n_points": 200,
+      "x": 56.25,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 61,
+      "ts": 3.8125,
+      "n_points": 200,
+      "x": 57.1875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 62,
+      "ts": 3.875,
+      "n_points": 200,
+      "x": 58.125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 63,
+      "ts": 3.9375,
+      "n_points": 200,
+      "x": 59.0625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 64,
+      "ts": 4.0,
+      "n_points": 200,
+      "x": 60.0,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 65,
+      "ts": 4.0625,
+      "n_points": 200,
+      "x": 60.927734375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 66,
+      "ts": 4.125,
+      "n_points": 200,
+      "x": 61.8359375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 67,
+      "ts": 4.1875,
+      "n_points": 200,
+      "x": 62.724609375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 68,
+      "ts": 4.25,
+      "n_points": 200,
+      "x": 63.59375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 69,
+      "ts": 4.3125,
+      "n_points": 200,
+      "x": 64.443359375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 70,
+      "ts": 4.375,
+      "n_points": 200,
+      "x": 65.2734375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 71,
+      "ts": 4.4375,
+      "n_points": 200,
+      "x": 66.083984375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 72,
+      "ts": 4.5,
+      "n_points": 200,
+      "x": 66.875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 73,
+      "ts": 4.5625,
+      "n_points": 200,
+      "x": 67.646484375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 74,
+      "ts": 4.625,
+      "n_points": 200,
+      "x": 68.3984375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 75,
+      "ts": 4.6875,
+      "n_points": 200,
+      "x": 69.130859375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 76,
+      "ts": 4.75,
+      "n_points": 200,
+      "x": 69.84375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 77,
+      "ts": 4.8125,
+      "n_points": 200,
+      "x": 70.537109375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 78,
+      "ts": 4.875,
+      "n_points": 200,
+      "x": 71.2109375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 79,
+      "ts": 4.9375,
+      "n_points": 200,
+      "x": 71.865234375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 81,
+      "ts": 5.0625,
+      "n_points": 200,
+      "x": 73.115234375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 82,
+      "ts": 5.125,
+      "n_points": 200,
+      "x": 73.7109375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 83,
+      "ts": 5.1875,
+      "n_points": 200,
+      "x": 74.287109375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 84,
+      "ts": 5.25,
+      "n_points": 200,
+      "x": 74.84375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 85,
+      "ts": 5.3125,
+      "n_points": 200,
+      "x": 75.380859375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 86,
+      "ts": 5.375,
+      "n_points": 200,
+      "x": 75.8984375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 87,
+      "ts": 5.4375,
+      "n_points": 200,
+      "x": 76.396484375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 88,
+      "ts": 5.5,
+      "n_points": 200,
+      "x": 76.875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 89,
+      "ts": 5.5625,
+      "n_points": 200,
+      "x": 77.333984375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 90,
+      "ts": 5.625,
+      "n_points": 200,
+      "x": 77.7734375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 91,
+      "ts": 5.6875,
+      "n_points": 200,
+      "x": 78.193359375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 92,
+      "ts": 5.75,
+      "n_points": 200,
+      "x": 78.59375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 93,
+      "ts": 5.8125,
+      "n_points": 200,
+      "x": 78.974609375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 94,
+      "ts": 5.875,
+      "n_points": 200,
+      "x": 79.3359375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 95,
+      "ts": 5.9375,
+      "n_points": 200,
+      "x": 79.677734375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 96,
+      "ts": 6.0,
+      "n_points": 200,
+      "x": 80.0,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 97,
+      "ts": 6.0625,
+      "n_points": 200,
+      "x": 80.3125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 98,
+      "ts": 6.125,
+      "n_points": 200,
+      "x": 80.625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 99,
+      "ts": 6.1875,
+      "n_points": 200,
+      "x": 80.9375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 100,
+      "ts": 6.25,
+      "n_points": 200,
+      "x": 81.25,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 101,
+      "ts": 6.3125,
+      "n_points": 200,
+      "x": 81.5625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 102,
+      "ts": 6.375,
+      "n_points": 200,
+      "x": 81.875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 103,
+      "ts": 6.4375,
+      "n_points": 200,
+      "x": 82.1875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 104,
+      "ts": 6.5,
+      "n_points": 200,
+      "x": 82.5,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 105,
+      "ts": 6.5625,
+      "n_points": 200,
+      "x": 82.8125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 106,
+      "ts": 6.625,
+      "n_points": 200,
+      "x": 83.125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 107,
+      "ts": 6.6875,
+      "n_points": 200,
+      "x": 83.4375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 108,
+      "ts": 6.75,
+      "n_points": 200,
+      "x": 83.75,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 109,
+      "ts": 6.8125,
+      "n_points": 200,
+      "x": 84.0625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 110,
+      "ts": 6.875,
+      "n_points": 200,
+      "x": 84.375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 111,
+      "ts": 6.9375,
+      "n_points": 200,
+      "x": 84.6875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 112,
+      "ts": 7.0,
+      "n_points": 200,
+      "x": 85.0,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 113,
+      "ts": 7.0625,
+      "n_points": 200,
+      "x": 85.3125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 114,
+      "ts": 7.125,
+      "n_points": 200,
+      "x": 85.625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 115,
+      "ts": 7.1875,
+      "n_points": 200,
+      "x": 85.9375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 116,
+      "ts": 7.25,
+      "n_points": 200,
+      "x": 86.25,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 117,
+      "ts": 7.3125,
+      "n_points": 200,
+      "x": 86.5625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 118,
+      "ts": 7.375,
+      "n_points": 200,
+      "x": 86.875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 119,
+      "ts": 7.4375,
+      "n_points": 200,
+      "x": 87.1875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 120,
+      "ts": 7.5,
+      "n_points": 200,
+      "x": 87.5,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 121,
+      "ts": 7.5625,
+      "n_points": 200,
+      "x": 87.8125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 122,
+      "ts": 7.625,
+      "n_points": 200,
+      "x": 88.125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 123,
+      "ts": 7.6875,
+      "n_points": 200,
+      "x": 88.4375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 124,
+      "ts": 7.75,
+      "n_points": 200,
+      "x": 88.75,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 125,
+      "ts": 7.8125,
+      "n_points": 200,
+      "x": 89.0625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 126,
+      "ts": 7.875,
+      "n_points": 200,
+      "x": 89.375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 127,
+      "ts": 7.9375,
+      "n_points": 200,
+      "x": 89.6875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 128,
+      "ts": 8.0,
+      "n_points": 200,
+      "x": 90.0,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 129,
+      "ts": 8.0625,
+      "n_points": 200,
+      "x": 90.3125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 130,
+      "ts": 8.125,
+      "n_points": 200,
+      "x": 90.625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 131,
+      "ts": 8.1875,
+      "n_points": 200,
+      "x": 90.9375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 132,
+      "ts": 8.25,
+      "n_points": 200,
+      "x": 91.25,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 133,
+      "ts": 8.3125,
+      "n_points": 200,
+      "x": 91.5625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 134,
+      "ts": 8.375,
+      "n_points": 200,
+      "x": 91.875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 135,
+      "ts": 8.4375,
+      "n_points": 200,
+      "x": 92.1875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 136,
+      "ts": 8.5,
+      "n_points": 200,
+      "x": 92.5,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 137,
+      "ts": 8.5625,
+      "n_points": 200,
+      "x": 92.8125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 138,
+      "ts": 8.625,
+      "n_points": 200,
+      "x": 93.125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 139,
+      "ts": 8.6875,
+      "n_points": 200,
+      "x": 93.4375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 140,
+      "ts": 8.75,
+      "n_points": 200,
+      "x": 93.75,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 141,
+      "ts": 8.8125,
+      "n_points": 200,
+      "x": 94.0625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 142,
+      "ts": 8.875,
+      "n_points": 200,
+      "x": 94.375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 143,
+      "ts": 8.9375,
+      "n_points": 200,
+      "x": 94.6875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 144,
+      "ts": 9.0,
+      "n_points": 200,
+      "x": 95.0,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 145,
+      "ts": 9.0625,
+      "n_points": 200,
+      "x": 95.3125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 146,
+      "ts": 9.125,
+      "n_points": 200,
+      "x": 95.625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 147,
+      "ts": 9.1875,
+      "n_points": 200,
+      "x": 95.9375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 148,
+      "ts": 9.25,
+      "n_points": 200,
+      "x": 96.25,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 149,
+      "ts": 9.3125,
+      "n_points": 200,
+      "x": 96.5625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 150,
+      "ts": 9.375,
+      "n_points": 200,
+      "x": 96.875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 151,
+      "ts": 9.4375,
+      "n_points": 200,
+      "x": 97.1875,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 152,
+      "ts": 9.5,
+      "n_points": 200,
+      "x": 97.5,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 153,
+      "ts": 9.5625,
+      "n_points": 200,
+      "x": 97.8125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 154,
+      "ts": 9.625,
+      "n_points": 200,
+      "x": 98.125,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 155,
+      "ts": 9.6875,
+      "n_points": 200,
+      "x": 98.4375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 156,
+      "ts": 9.75,
+      "n_points": 200,
+      "x": 98.75,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 157,
+      "ts": 9.8125,
+      "n_points": 200,
+      "x": 99.0625,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 158,
+      "ts": 9.875,
+      "n_points": 200,
+      "x": 99.375,
+      "y": 0.0,
+      "z": 0.75
+    },
+    {
+      "drive_id": "golden",
+      "frame_idx": 159,
+      "ts": 9.9375,
+      "n_points": 200,
+      "x": 99.6875,
+      "y": 0.0,
+      "z": 0.75
+    }
+  ],
+  "expected": {
+    "n_frames_out": 159,
+    "error_codes": {
+      "81": "VL-001"
+    },
+    "events": [
+      {
+        "event_type": "HARD_BRAKE",
+        "start_frame": 64,
+        "end_frame": 79,
+        "frame_tol": 6
+      },
+      {
+        "event_type": "HARD_BRAKE",
+        "start_frame": 82,
+        "end_frame": 96,
+        "frame_tol": 6
+      }
+    ],
+    "no_event_contains_frames": [
+      81
+    ]
+  }
+}

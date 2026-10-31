@@ -1,0 +1,10 @@
+{
+  "case": "g12_empty",
+  "description": "No rows at all.",
+  "raw": [],
+  "expected": {
+    "n_frames_out": 0,
+    "error_codes": {},
+    "events": []
+  }
+}

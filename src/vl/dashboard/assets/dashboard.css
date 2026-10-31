@@ -1,0 +1,353 @@
+/* The dashboard's skin. Dash serves every file in this assets folder, so nothing wires it up.
+
+   The rule that carries the design: whatever the pipeline computed is set in the monospace
+   face (frame indices, counts, codes, every table cell), whatever a person wrote is sans. The
+   page should read as an instrument showing its readings, not as a report about them.
+
+   This file also holds the styling inline styles cannot reach: focus rings, sticky table
+   headers, zebra rows, reduced motion, and the offscreen-row optimisation of long tables. */
+
+:root {
+  color-scheme: light;
+  /* Graphite housing, slate bench, white panels. */
+  --ink: #111a21;
+  --mute: #5d6b75;
+  --line: #ccd5db;
+  --hair: #e4eaee;
+  --shell: #e7ebee;
+  --panel: #ffffff;
+  --trace: #0f7b78; /* the ego path: accent, selected tab, focus ring */
+  --fault: #a4162c; /* a fault the reader must look at: rejected messages */
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+body {
+  margin: 0;
+  background: var(--shell);
+  color: var(--ink);
+  font: 13px/1.55 var(--sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Every band's content lines up on one measure; the bands themselves run full width. */
+.vl-wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---- Header band ---------------------------------------------------------------------- */
+
+.vl-band {
+  background: var(--ink);
+  border-bottom: 3px solid var(--trace);
+  padding: 20px 0 22px;
+}
+
+.vl-band h1 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  color: #f3f6f7;
+  text-wrap: balance;
+}
+
+.vl-band p {
+  margin: 6px 0 0;
+  max-width: 64ch;
+  color: #9eb0bb;
+  text-wrap: pretty;
+}
+
+/* ---- Cards and section headings ------------------------------------------------------- */
+
+.vl-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 14px 16px 16px;
+}
+
+/* Headings are written in title case and shown as small caps, so a screen reader still
+   reads "Speed & Acceleration" rather than shouting it. */
+.vl-card > h2 {
+  margin: 0 0 12px;
+  font: 600 11px/1 var(--sans);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--mute);
+  scroll-margin-top: 16px;
+}
+
+.vl-stack {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+/* ---- Layout: controls beside the charts, tables below --------------------------------- */
+
+.vl-explorer,
+.vl-quality {
+  display: grid;
+  gap: 14px;
+  align-items: start;
+  padding: 16px 0 36px;
+}
+
+.vl-explorer {
+  grid-template-columns: 288px minmax(0, 1fr);
+}
+
+/* Chart on the wide side, the one count beside it; then the table and the code reference. */
+.vl-quality {
+  grid-template-columns: 216px minmax(0, 1fr);
+}
+
+.vl-full {
+  grid-column: 1 / -1;
+}
+
+.vl-half {
+  grid-column: span 1;
+}
+
+/* The controls stay in view while the reader scrolls the drive's charts and tables. Dash
+   clips its own tab wrapper, and a clipping ancestor switches sticky off, so that wrapper
+   has to let its content out first. */
+.tab-parent {
+  overflow: visible;
+}
+
+.vl-side {
+  position: sticky;
+  top: 14px;
+}
+
+@media (max-width: 900px) {
+  .vl-explorer,
+  .vl-quality {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .vl-side {
+    position: static;
+  }
+
+  .vl-half {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---- The readout strip: the chosen drive's own numbers -------------------------------- */
+
+/* One row of equal cells, so the readings read as one cluster of gauges rather than a wrap
+   of tiles; narrow screens get three to a row instead. */
+.vl-readout {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Values sit on the baseline of the strip whatever height a label takes. */
+.vl-read {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 11px 14px 12px;
+  border-left: 1px solid var(--hair);
+}
+
+.vl-read:first-child {
+  border-left: none;
+}
+
+.vl-read-label {
+  display: block;
+  font: 600 10px/1 var(--sans);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.vl-read-value {
+  display: block;
+  margin-top: 6px;
+  font: 500 20px/1.15 var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Six gauges need about 750px of strip. The strip is the window less the controls rail, so
+   it runs out of room well before the rail stacks at 900px: below 1100px it goes to three to
+   a row. This has to follow the rules above, which would otherwise win on source order. */
+@media (max-width: 1100px) {
+  .vl-readout {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .vl-read:nth-child(3n + 1) {
+    border-left: none;
+  }
+
+  .vl-read-value {
+    font-size: 17px; /* a value with a unit stays on one line in a third of a phone */
+  }
+}
+
+.vl-stat {
+  display: block;
+  margin-top: 2px;
+  font: 500 30px/1.1 var(--mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--fault);
+}
+
+/* ---- Tables: pipeline output, so monospace throughout --------------------------------- */
+
+.vl-table {
+  width: 100%;
+  border-collapse: collapse;
+  font: 12px/1.5 var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.vl-table th,
+.vl-table td {
+  padding: 5px 11px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.vl-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #f4f7f8;
+  border-bottom: 1px solid var(--line);
+  font: 600 10px/1.6 var(--sans);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.vl-table tbody tr:nth-child(even) {
+  background: #f8fafb;
+}
+
+/* Cheap virtualisation: rows outside the scroll box are not laid out or painted. */
+.vl-table tbody tr {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 27px;
+}
+
+.vl-scroll {
+  max-height: 320px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  border: 1px solid var(--hair);
+  border-radius: 5px;
+}
+
+/* ---- The error-code reference: a code is a token, its meaning is prose ----------------- */
+
+.vl-legend {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 8px 14px;
+  margin: 0;
+}
+
+.vl-legend dt {
+  padding: 2px 7px;
+  background: #f4f7f8;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font: 500 12px/1.5 var(--mono);
+}
+
+.vl-legend dd {
+  margin: 0;
+  align-self: center;
+  color: var(--mute);
+}
+
+/* ---- Controls ------------------------------------------------------------------------- */
+
+.vl-field {
+  display: block;
+  margin: 0 0 6px;
+  font: 600 10px/1 var(--sans);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+/* Each control is followed by the next field label, so the gap belongs to the control. */
+.vl-field + div {
+  margin-bottom: 14px;
+}
+
+.vl-side .Select-control {
+  border-color: var(--line);
+  border-radius: 5px;
+}
+
+.vl-side .is-focused:not(.is-open) > .Select-control {
+  border-color: var(--trace);
+  box-shadow: 0 0 0 3px rgba(15, 123, 120, 0.18);
+}
+
+.vl-notice {
+  margin: 0 0 12px;
+  color: var(--fault);
+}
+
+.vl-empty {
+  margin: 0;
+  color: var(--mute);
+  font-size: 12px;
+}
+
+/* Dash grows every tab to fill the row, which turns two tabs into a segmented control.
+   They are tabs: each one is as wide as its label, and the row starts at the left. Below
+   Dash's own breakpoint it stacks them instead, where full width is the right answer. */
+.tab-parent--above-breakpoint .tab {
+  flex: 0 0 auto;
+}
+
+.tab-container .tab {
+  touch-action: manipulation;
+}
+
+/* A keyboard user must always see where they are; a pointer user should not get a ring.
+   Dash and Plotly ring their own controls in their own colours; ``.dash-dropdown`` is named
+   here only to bring the one control we place ourselves back into this palette. Their
+   internals are left alone: their rings are visible, and out-specifying a vendor's CSS is a
+   thing that breaks on its next release.
+   Known gap: dcc.Tabs renders each tab as a plain div with no role and no tabindex, so the
+   tabs cannot be reached by keyboard at all. That needs a fix in Dash, not a ring here. */
+a:focus-visible,
+button:focus-visible,
+.dash-dropdown:focus-visible,
+.vl-scroll:focus-visible {
+  outline: 2px solid var(--trace);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

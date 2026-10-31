@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.superpowers/
+data/
+spark-warehouse/
+metastore_db/
+derby.log
+.DS_Store
+# Confidential assignment brief: not part of the submission
+home_exerc_algo_infra.pdf
+
+# Private interview study guide (not part of the submission)
+study/
